@@ -1,3 +1,5 @@
+package com.bookstore;
+
 public class Book {
     private long isbnNumber;
     private String title;
@@ -34,6 +36,13 @@ public class Book {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+    public void display(){
+        System.out.println("book isbn number = " + isbnNumber);
+        System.out.println( "book title = "+ title);
+        System.out.println("book description = " + description);
+        System.out.println("book price = " + price);
+
     }
 
 }
