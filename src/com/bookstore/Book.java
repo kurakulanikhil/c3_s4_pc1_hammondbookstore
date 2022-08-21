@@ -5,6 +5,15 @@ public class Book {
     private String title;
     private String description;
     private double price;
+    private Author author;
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
 
     public long getIsbnNumber() {
         return isbnNumber;
@@ -42,6 +51,7 @@ public class Book {
         System.out.println( "book title = "+ title);
         System.out.println("book description = " + description);
         System.out.println("book price = " + price);
+        System.out.println( author);
 
     }
 

@@ -3,7 +3,7 @@ package com.bookstore;
 public class Author {
     private String authorName;
     private String authorPenName;
-    private Book book;
+
 
     public String getAuthorName() {
         return authorName;
@@ -21,11 +21,14 @@ public class Author {
         this.authorPenName = authorPenName;
     }
 
-    public Book getBook() {
-        return book;
-    }
 
-    public void setBook(Book book) {
-        this.book = book;
+    @Override
+    public String toString() {
+        //return authorName "name = vaibhav" + ", \n" + authorPenName;
+        return "Author Name = " + authorName + "\nAuthor Pen Name = " + authorPenName;
+
+
+
     }
 }
+
